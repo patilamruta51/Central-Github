@@ -1,1 +1,3 @@
 Hello Sandy
+Hello amruta
+This is the first code for Github
