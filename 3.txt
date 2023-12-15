@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Hello amruta
+=======
+Hi ALL welcome to devops
+>>>>>>> 47a32a58f22bbb0deb36cf041c13084d3e7f5a33
