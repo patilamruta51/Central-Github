@@ -1,15 +1,17 @@
 pipeline 
 {
     agent { node { label 'built-in' } } 
-	
-    stages 
+parameters {
+        string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Whom should I say hello to?')
+    }
+stages 
 	{
-        stage('Hello') 
+        stage('Example') 
 		{
             steps 
 			{
-                echo 'Hello World'
-            }
+                echo "Hello ${params.PERSON}"
+                }
         }
         stage('Bye')
 		{
