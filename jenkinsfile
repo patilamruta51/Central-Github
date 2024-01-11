@@ -20,7 +20,9 @@ pipeline {
         stage('SCM Checkout') {
             steps {
                 echo "Hello and Welcome ${params.PERSON}"
-
+                sh '''
+                touch 11.txt
+                pwd '''
                 echo "Biography: ${params.BIOGRAPHY}"
 
                 echo "Toggle: ${params.TOGGLE}"
