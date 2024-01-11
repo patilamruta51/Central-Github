@@ -25,5 +25,19 @@ pipeline {
                 echo "Password: ${params.PASSWORD}"
             }
         }
-    }
+    Stage('Example') {
+            steps {
+                echo "Hello and Welcome ${params.PERSON}"
+
+                echo "Biography: ${params.BIOGRAPHY}"
+
+                echo "Toggle: ${params.TOGGLE}"
+
+                echo "Choice: ${params.CHOICE}"
+
+                echo "Password: ${params.PASSWORD}"
+                }
+           }
+     }
 }
+
